@@ -1,0 +1,93 @@
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a standard font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+/* Style the header with a background image */
+header {
+  background-image: url("header-background.jpg");
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+/* Style the logo and navigation links */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: #ffdd00;
+}
+
+/* Style the main content section */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Style the headings */
+h1, h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ffdd00;
+}
+
+/* Style the text content */
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Style the image gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 10px;
+}
