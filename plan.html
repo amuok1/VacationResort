@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <style>
+      header {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #00a5e3;
+}
+        /* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+/* Heading styles */
+h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Form styles */
+form {
+  width: 60%;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+input[type="radio"] {
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Reservation details styles */
+div {
+  width: 60%;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#room-type,
+#total {
+  font-weight: bold;
+}
+
+#confirmation {
+  font-style: italic;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plan.html">Overnight Cost Estimator</a>
+        </li>
+        </ul>
+      </nav>
+    </header>
+    <form id="pricing-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="check-in-date">Check-in Date:</label>
+      <input type="date" id="check-in-date" name="check-in-date" required><br>
+      
+      <label for="nights">Number of Nights:</label>
+      <input type="number" id="nights" name="nights" required><br>
+      
+      <label>Room Type:</label><br>
+      <label for="queen">
+        <input type="radio" id="queen" name="room-type" value="Queen" required>Queen
+      </label><br>
+      <label for="king">
+        <input type="radio" id="king" name="room-type" value="King">King
+      </label><br>
+      <label for="2-bedroom-suite">
+        <input type="radio" id="2-bedroom-suite" name="room-type" value="2-Bedroom Suite">2-Bedroom Suite
+      </label><br>
+      
+      <label for="adults">Number of Adults:</label>
+      <input type="number" id="adults" name="adults" min="1" value="1" required><br>
+      
+      <label for="children">Number of Children:</label>
+      <input type="number" id="children" name="children" min="0" value="0" required><br>
+      
+      <label>Discount:</label><br>
+      <label for="aaa-senior">
+        <input type="radio" id="aaa-senior" name="discount" value="AAA/Senior" required>AAA/Senior
+      </label><br>
+      <label for="military">
+        <input type="radio" id="military" name="discount" value="Military">Military
+      </label><br>
+      
+      <button type="submit">Submit</button>
+    </form>
+
+    <div>
+      <h2>Reservation Details</h2>
+      <p>Room Type Rate: $<span id="room-type"></span></p>
+      <p>Total: $<span id="total"></span></p>
+      <p id="confirmation"></p>
+    </div>
+
+    <script src="scripts/index.js" ></script>
+  </body>
+</html>

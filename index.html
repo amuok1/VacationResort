@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resort Name | Home</title>
+    <style>
+      /* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #00a5e3;
+}
+
+/* Main styles */
+.hero-image {
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-image h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-image p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.hero-image button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #00a5e3;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-image button:hover {
+  background-color: #0077b6;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.features div {
+  flex-basis: calc(33.33% - 20px);
+}
+
+.features img {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.features p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plan.html">Overnight Cost Estimator</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-image">
+        <h1>Welcome to Resort Name</h1>
+        <p>Escape to paradise and experience the ultimate in relaxation and adventure.</p>
+        <button>Book Your Stay</button>
+      </section>
+      <section class="features">
+        <div>
+          <img src="images/privatebeach.jpg" alt="Feature 1">
+          <h2>Private Beach</h2>
+          <p>One of the most attractive features of a resort can be having a private beach. Guests can enjoy the pristine beachfront without having to worry about the crowds or the hassle of finding a spot to relax. This feature can add exclusivity to the resort and provide guests with an unparalleled experience.</p>
+        </div>
+        <div>
+          <img src="images/onsitespa.jpg" alt="Feature 2">
+          <h2>Onsite Spa</h2>
+          <p>An onsite spa can be a great addition to a resort, as it allows guests to unwind and rejuvenate in a serene environment. The spa can offer a variety of services like massages, facials, body treatments, and more. The spa can be a perfect escape from the stress and chaos of everyday life, providing guests with a chance to relax and recharge.</p>
+        </div>
+        <div>
+          <img src="images/adventuresports.jpg" alt="Feature 3">
+          <h2>Adventure Sports</h2>
+          <p>A resort can provide a range of adventure sports activities, such as scuba diving, snorkeling, kayaking, parasailing, and more. These activities can be an excellent way to explore the surroundings and experience the thrill of adventure. Adventure sports can also help guests build teamwork and boost their confidence and self-esteem.</p>
+        </div>
+      </section>
+      <section class="about">
+        <h2>About Sapphire Bay Resort!</h2>
+        <p>Welcome to Sapphire Bay Resort, the perfect destination for your next vacation! Nestled on the pristine white sands of a private beach, our resort offers a tropical paradise with crystal clear waters, lush palm trees, and breathtaking sunsets.
+            With luxurious accommodations, world-class dining options, and endless activities, Sapphire Bay Resort is the ultimate escape for couples, families, and friends. Enjoy a relaxing day at our infinity pool, explore the coral reefs on a snorkeling excursion, or take a yoga class on the beach.  
+            Our spa offers a range of treatments to help you rejuvenate and unwind, including massages, facials, and body scrubs. And for those seeking adventure, our resort offers a variety of watersports, including jet skiing, parasailing, and paddleboarding.
+            At Sapphire Bay Resort, we strive to create unforgettable experiences for our guests. Whether you're seeking a romantic getaway, a fun-filled family vacation, or a relaxing retreat, our resort has everything you need for an unforgettable stay. We look forward to welcoming you to our piece of paradise!</p>
+      </section>
+    </main>
+  </body>
+</html>
